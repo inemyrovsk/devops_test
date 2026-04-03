@@ -16,5 +16,3 @@ def send_task():
         return f"Worker response: {r.text}"
     except Exception as e:
         return f"Error contacting worker: {str(e)}"
-
-app.run(host="0.0.0.0", port=5000)
